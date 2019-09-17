@@ -21,4 +21,9 @@ public class test {
         Age = 0;
     }
 
+
+    public static void main( int[] args ) {
+        test a= new test();
+
+    }
 }
