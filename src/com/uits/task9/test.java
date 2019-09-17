@@ -22,8 +22,8 @@ public class test {
     }
 
 
-    public static void main( int[] args ) {
+  /*  public static void main( int[] args ) {
         test a= new test();
 
-    }
+    }*/
 }
