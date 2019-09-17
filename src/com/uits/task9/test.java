@@ -22,7 +22,9 @@ public class test {
     }
 
     public static void main( int[] args ) {
-        test a= new test();
+        test a = new test();
+        test b = new test("Anna");
+        test c = new test(23,"Anna");
 
     }
 }
