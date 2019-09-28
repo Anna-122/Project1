@@ -8,7 +8,7 @@
 3) вывод на печать;
 4) умножение матриц - по желанию.*/
 
-package com.uits.task9;
+/*package com.uits.task9;
 
 public class MainMatrix {
     public static void main(String[] args) {
@@ -27,4 +27,4 @@ public class MainMatrix {
 
     }
 
-}
+}*/

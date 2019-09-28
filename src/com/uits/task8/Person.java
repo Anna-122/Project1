@@ -13,15 +13,11 @@ public class Person {
         FullName = null;
         Age = 0;
     }
-    void talk() {
-        System.out.println("Меня зовут" + FullName);
+    public void PersonTalk(){
+        System.out.println("Меня зовут " + FullName);
     }
-    /*void move() {
-        System.out.println("Меня зовут"+FullName);
-    }*/
-
-    public static void main( int[] args ) {
-        Person a = new Person();
+    public void PersonMove(){
+        System.out.println(" Сегодня я собираюсь на курсы " );
     }
 
 

@@ -7,8 +7,7 @@ public class test {
     test(int age, String name) {
         System.out.println("Конструирование объекта с двумя аргументами");
         Age = age;
-        Name = name;
-    }
+        Name = name;    }
 
     test(String name) {
         System.out.println("Конструирование объекта с одним аргументом name");
@@ -19,12 +18,5 @@ public class test {
         System.out.println("Конструирование объекта без аргументов");
         Name = null;
         Age = 0;
-    }
-
-    public static void main( int[] args ) {
-        test a = new test();
-        test b = new test("Anna");
-        test c = new test(23,"Anna");
-
     }
 }
