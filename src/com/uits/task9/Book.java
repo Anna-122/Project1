@@ -5,18 +5,15 @@ public class Book {
     String bookName;
 
     Book( String authorName, String bookName ) {
-        authorName = authorName;
-        bookName = bookName;
+        this(authorName) ;
+        this.bookName = bookName;
     }
 
     Book( String authorName ) {
-        authorName = authorName;
-        bookName = "default";
+       this();
     }
 
     Book() {
-        authorName = "default";
-        bookName = "default";
     }
 
 }

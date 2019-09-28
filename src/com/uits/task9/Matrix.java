@@ -1,9 +1,9 @@
 package com.uits.task9;
 
 public class Matrix {
-    int column;
-    int lines;
-    double[][] matrix;
+    private int column;
+    private int lines;
+    private static double[][] matrix;
 
     // Первый конструктор
     public Matrix( int lin, int col) {
@@ -28,13 +28,13 @@ public class Matrix {
 
 
 
-    public double[][] getMatrix() {
+    static double[][] getMatrix() {
         return matrix;
     }
 
 
     // Метод вывода массива на консоль
-    public void printMatrix(double[][] matrix) {
+    static void printMatrix(double[][] matrix) {
         System.out.println("Вывод на печать матрицы обьекта");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
@@ -46,9 +46,9 @@ public class Matrix {
 
 
     public double RandomFill(int i){
-        double r = Math.random() * i;
-        return r;
+        return Math.random() * i;
     }
+
 }
 
 

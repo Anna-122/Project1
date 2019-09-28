@@ -20,38 +20,31 @@ public class Reader {
     String authorName;
 
 
+
     Reader( String name, String secondName, int ticketNumber, String faculty, String phoneNumber, String bornDate, int CountBook, String nameBook, String authorName) {
-        name = name;
-        secondName = secondName;
-        ticketNumber = ticketNumber;
-        faculty = faculty;
-        phoneNumber = phoneNumber;
-        bornDate = bornDate;
-        countBook = 0;
-        nameBook="default";
-        authorName="default";
+        this(name, secondName, ticketNumber, CountBook,nameBook,authorName);
+        this.faculty = faculty;
+        this.phoneNumber = phoneNumber;
+        this.bornDate = bornDate;
     }
-    Reader( String name, String secondName, int ticketNumber, int CountBook, String nameBook, String authorName) {
+    Reader( String name, String secondName, int ticketNumber, int CountBook, String nameBook, String authorName ) {
+         this(name, secondName, CountBook);
         this.name = name;
         this.secondName = secondName;
         this.ticketNumber = ticketNumber;
-        this.faculty = "default";
-        this.phoneNumber = "default";
-        this.bornDate ="default" ;
-        this.countBook = countBook;
-        this.nameBook=nameBook;
+        this. nameBook=nameBook;
         this.authorName=authorName;
+
     }
-    Reader( String name, String secondName,  int CountBook) {
+    Reader( String name, String secondName, int CountBook ) {
+        this();
         this.name = name;
         this.secondName = secondName;
-        this.ticketNumber = 0;
-        this.faculty = "default";
-        this.phoneNumber = "default";
-        this.bornDate = "default";
         this.countBook = CountBook;
-        this.nameBook = "default";
-        this.authorName = "default";
+    }
+
+    Reader(){
+        System.out.println(" конструктор по умолчанию");
     }
 
 
@@ -75,11 +68,12 @@ public class Reader {
         System.out.println(name+ secondName + "вернул"+countBook + "книг" + nameBook + authorName);
     }
 
-    public void returnBook(String[] bookTitles){
+    /*public void returnBook(String[] bookTitles){
         System.out.println(name+ secondName + "вернул"+countBook + "книг" + nameBook + authorName);
         for (int i = 0; i < bookTitles.length; i++) {
             System.out.println(bookTitles[i]);
         }
-    }
+    }*/
+
 
 }
