@@ -28,17 +28,18 @@ public abstract class PlayInstruments implements Instrument {
     public static void main( String[] args ) {
 
         Instrument[] musicTools = new Instrument[6];
-        musicTools[0] = new Guitar(15);
+        musicTools[0] = new Guitar(12);
         musicTools[1] = new Trumpet(40);
         musicTools[2] = new Drum(86);
-        musicTools[3] = new Drum(86);
-        musicTools[4] = new Trumpet(40);
+        musicTools[3] = new Drum(54);
+        musicTools[4] = new Trumpet(20);
         musicTools[5] = new Guitar(15);
 
-        for (int i = 0; i < musicTools.length; i++) {
+       // for (int i = 0; i < musicTools.length; i++) {
 //            Instrument a = musicTools[i]();
 //            a.play();
-            musicTools[i].play();
+        for (Instrument obj : musicTools) {
+            obj.play();
         }
     }
 }
