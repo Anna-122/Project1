@@ -6,7 +6,7 @@ public  class Guitar implements Instrument {
         this.numberOfstrings = numberOfstrings;
     }
     public void play() {
-        System.out.println("Играет гитара "+numberOfstrings);
+        System.out.println("Играет гитара "+numberOfstrings+" струн");
     }
 }
 

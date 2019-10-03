@@ -6,6 +6,6 @@ public  class Trumpet implements Instrument {
          this.size = size;
      }
     public void play() {
-        System.out.println("Играет труба "+ size);
+        System.out.println("Играет труба с размером "+ size);
     }
 }

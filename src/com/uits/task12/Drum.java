@@ -6,6 +6,6 @@ public class Drum implements Instrument {
        this.diameter= diameter;
     }
     public void play() {
-        System.out.println("Играет барабан "+ diameter);
+        System.out.println("Играет барабан с диаметром "+ diameter);
     }
 }
