@@ -24,33 +24,21 @@
 
 package com.uits.task12;
 
-public class PlayInstruments implements Instrument {
+public abstract class PlayInstruments implements Instrument {
     public static void main( String[] args ) {
-        Instrument[] musicTools = new Instrument[5];
-        musicTools[0] = new Instrument.Guitar(15);
 
-        Guitar guitar = new Guitar(15) {
-        };
-        Trumpet trumpet = new Trumpet(40) {
-        };
-        Drum drum = new Drum(86) {
-        };
+        Instrument[] musicTools = new Instrument[6];
+        musicTools[0] = new Guitar(15);
+        musicTools[1] = new Trumpet(40);
+        musicTools[2] = new Drum(86);
+        musicTools[3] = new Drum(86);
+        musicTools[4] = new Trumpet(40);
+        musicTools[5] = new Guitar(15);
 
-        guitar.play();
-        System.out.println();
-
-        trumpet.play();
-        System.out.println();
-
-        drum.play();
-
-
-        Instrument[] tools = new Instrument[2];
-        for (int i = 0; i < 3; i++) {
-             guitar.play();
-             trumpet.play();
-             drum.play();
-
+        for (int i = 0; i < musicTools.length; i++) {
+//            Instrument a = musicTools[i]();
+//            a.play();
+            musicTools[i].play();
         }
     }
 }

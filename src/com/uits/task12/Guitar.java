@@ -1,12 +1,10 @@
 package com.uits.task12;
 
-public  abstract class Guitar implements Instrument {
+public  class Guitar implements Instrument {
     int numberOfstrings;
-
-    Guitar( int num ) {
-        numberOfstrings = num;
+    Guitar( int numberOfstrings ) {
+        this.numberOfstrings = numberOfstrings;
     }
-
     public void play() {
         System.out.println("Играет гитара "+numberOfstrings);
     }
