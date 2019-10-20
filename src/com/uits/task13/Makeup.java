@@ -9,6 +9,7 @@ public class Makeup extends Store implements Goods {
     Makeup() {
        sex="Uni sex";
      }
+
      public void putToCart(){
         System.out.println("Товар "+title+" положим в корзину");
      }

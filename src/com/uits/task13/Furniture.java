@@ -12,6 +12,7 @@ public class Furniture extends Store implements Goods{
         disign="default";
     }
     public void putToCart(){
+
         System.out.println("Товар "+title+" положим в корзину");
     }
 }
