@@ -1,7 +1,7 @@
-package Laba2FromUniversity;
+package kpi.laba2;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Collections;
 
 public class MainZoo {
     public static void main( String[] args ) {
@@ -11,8 +11,9 @@ public class MainZoo {
         ar.add(new Zoo("Маркиз", "дикий кот", 5));
         ar.add(new Zoo("Тошка", "белка", 7));
 
-        Collection.sort(ar, new SortByAnimalBreed());
-        Collection.sort(ar, new SortByCellNumber());
-        Collection.sort(ar, new SortByName());
+        Collections.sort(ar, new SortByAnimalBreed());
+        Collections.sort(ar, new SortByCellNumber());
+        Collections.sort(ar, new SortByName());
     }
 }
+

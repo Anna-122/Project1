@@ -1,4 +1,4 @@
-package Laba2FromUniversity;
+package kpi.laba2;
 
 public class Zoo {
     public String name;
