@@ -3,9 +3,9 @@ package Laba2FromUniversity;
 public class Zoo {
     public String name;
     public String animalBreed;
-    int cellNumber;
+    String cellNumber;
 
-    public Zoo( String name, String animalBreed, int cellNumber ) {
+    public Zoo( String name, String animalBreed, String cellNumber ) {
         this.name = name;
         this.animalBreed = animalBreed;
         this.cellNumber = cellNumber;
@@ -19,7 +19,7 @@ public class Zoo {
         return animalBreed;
     }
 
-    public int getCellNumber() {
+    public String getCellNumber() {
         return cellNumber;
     }
 
@@ -31,7 +31,7 @@ public class Zoo {
         this.animalBreed = animalBreed;
     }
 
-    public void setCellNumber( int cellNumber ) {
+    public void setCellNumber(String cellNumber ) {
         this.cellNumber = cellNumber;
     }
 }
