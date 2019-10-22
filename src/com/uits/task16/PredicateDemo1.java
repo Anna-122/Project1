@@ -18,20 +18,19 @@ class PredicateDemo1 {
         System.out.println();
         System.out.println("****** Примеры оптимизации кода с помощью лямбда выражений ******");
 
-        System.out.println("Классический цикл");
         List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7);
+        System.out.println("Классический цикл");
         for (int number : numbers) {
             System.out.println(number);
         }
 
         System.out.println("Тот же цикл через лямбда");
-        List<Integer> list = Arrays.asList(1,2,3,4,5,6,7);
         numbers.forEach((Integer value) -> System.out.println(value));
 
         System.out.println("Все тот же цикл через лямбда и оператор ::");
-        List<Integer> list2 = Arrays.asList(1,2,3,4,5,6,7);
         numbers.forEach(System.out::println);
-//        list.stream().map((x) -> x*x).forEach(System.out::println);
+        System.out.println("Еще пример лямбда выражения");
+        numbers.stream().map((x) -> x*x).forEach(System.out::println);
     }
 }
 
