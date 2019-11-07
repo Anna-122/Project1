@@ -2,17 +2,18 @@ package com.uits.task13;
 
 public class Furniture extends Store implements Goods{
     String color;
-    String disign;
-    Furniture(  String col, String dis ) {
+    String typeOfFurniture;
+    Furniture(  String col, String typeOfFurniture) {
         color=col;
-        disign=dis;
+        this.typeOfFurniture=typeOfFurniture;
     }
     Furniture(){
         color="default";
-        disign="default";
+        typeOfFurniture="default";
     }
     public void putToCart(){
 
         System.out.println("Товар "+title+" положим в корзину");
     }
 }
+

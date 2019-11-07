@@ -16,7 +16,7 @@ public class InternetShop {
 
         Goods[] goods = new Goods[3];
         goods[0] = new Makeup("male");
-        goods[1] = new Furniture("синий", "твердый");
+        goods[1] = new Furniture("коричневый", "table");
         goods[2] = new Clothes(42, "голубой");
 
         for (Goods obj : goods) {
