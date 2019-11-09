@@ -1,4 +1,4 @@
-package com.uits.lesson12;
+/*package com.uits.lesson12;
 
 public class Book implements Printable {
     private  String name;
@@ -41,4 +41,4 @@ public class Book implements Printable {
     public int hashCode() {
         return name != null ? name.hashCode() : 0;
     }
-}
+}*/

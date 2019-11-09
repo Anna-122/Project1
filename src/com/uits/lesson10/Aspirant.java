@@ -1,4 +1,4 @@
-package com.uits.lesson10;
+/*package com.uits.lesson10;
 
 public class Aspirant extends Student {
     private   String sciencework;
@@ -14,4 +14,4 @@ public class Aspirant extends Student {
     public int getScholarship(){
         return  getAvgMark()==5? 200:180;
     }
-}
+}*/

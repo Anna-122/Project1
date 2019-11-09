@@ -1,4 +1,4 @@
-/*package com.uits.task13;
+package com.uits.task13;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -27,4 +27,4 @@ import java.util.regex.Pattern;
 
             in.close();
         }
-    }*/
+    }
